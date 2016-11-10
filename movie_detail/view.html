@@ -1,0 +1,12 @@
+<div class="jumbotron">
+  <h2><span ng-click="back()">&lt;</span> {{movie.title}}</h2>
+  <div class="img"><img ng-src="{{movie.images.large}}" alt="{{movie.title}}"></div>
+  <p><span>简介：</span> {{movie.summary}}</p>
+</div>
+
+<div class="mask" ng-show="loading">
+  <div class="spinner">
+    <div class="dot1"></div>
+    <div class="dot2"></div>
+  </div>
+</div>
